@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12" />
+  <!-- Car icon outline -->
+  <path d="M140 290 L170 200 C178 176 198 160 224 160 L288 160 C314 160 334 176 342 200 L372 290 C382 295 388 305 388 316 L388 350 C388 360 380 368 370 368 L360 368 C350 368 342 360 342 350 L342 340 L170 340 L170 350 C170 360 162 368 152 368 L142 368 C132 368 124 360 124 350 L124 316 C124 305 130 295 140 290 Z" fill="url(#accent)" />
+  <!-- Car Windows -->
+  <path d="M185 210 L327 210 L315 250 L197 250 Z" fill="#0f172a" opacity="0.9" />
+  <!-- Wheels -->
+  <circle cx="180" cy="315" r="22" fill="#ffffff" />
+  <circle cx="180" cy="315" r="10" fill="#0e7490" />
+  <circle cx="332" cy="315" r="22" fill="#ffffff" />
+  <circle cx="332" cy="315" r="10" fill="#0e7490" />
+  <!-- Wash Bubbles / Water Drops -->
+  <circle cx="220" cy="120" r="16" fill="#38bdf8" opacity="0.8" />
+  <circle cx="256" cy="100" r="22" fill="#bae6fd" opacity="0.9" />
+  <circle cx="292" cy="125" r="14" fill="#38bdf8" opacity="0.8" />
+  <!-- Sparkles -->
+  <path d="M370 140 L375 155 L390 160 L375 165 L370 180 L365 165 L350 160 L365 155 Z" fill="#fef08a" />
+</svg>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Theme 1 - Default (Cyan/Slate) */
+    --color-primary-50: #ecfeff;
+    --color-primary-100: #cffafe;
+    --color-primary-200: #a5f3fc;
+    --color-primary-300: #67e8f9;
+    --color-primary-400: #22d3ee;
+    --color-primary-500: #06b6d4;
+    --color-primary-600: #0891b2;
+    --color-primary-700: #0e7490;
+    --color-primary-800: #155e75;
+    --color-primary-900: #164e63;
+    --color-primary-950: #083344;
+
+    --color-surface-50: #f8fafc;
+    --color-surface-100: #f1f5f9;
+    --color-surface-200: #e2e8f0;
+    --color-surface-300: #cbd5e1;
+    --color-surface-400: #94a3b8;
+    --color-surface-500: #64748b;
+    --color-surface-600: #475569;
+    --color-surface-700: #334155;
+    --color-surface-800: #1e293b;
+    --color-surface-900: #0f172a;
+    --color-surface-950: #020617;
+  }
+
+  [data-theme='blue'] {
+    /* Theme 2 - Blue (Blue/Gray) */
+    --color-primary-50: #eff6ff;
+    --color-primary-100: #dbeafe;
+    --color-primary-200: #bfdbfe;
+    --color-primary-300: #93c5fd;
+    --color-primary-400: #60a5fa;
+    --color-primary-500: #3b82f6;
+    --color-primary-600: #2563eb;
+    --color-primary-700: #1d4ed8;
+    --color-primary-800: #1e40af;
+    --color-primary-900: #1e3a8a;
+    --color-primary-950: #172554;
+
+    --color-surface-50: #f9fafb;
+    --color-surface-100: #f3f4f6;
+    --color-surface-200: #e5e7eb;
+    --color-surface-300: #d1d5db;
+    --color-surface-400: #9ca3af;
+    --color-surface-500: #6b7280;
+    --color-surface-600: #4b5563;
+    --color-surface-700: #374151;
+    --color-surface-800: #1f2937;
+    --color-surface-900: #111827;
+    --color-surface-950: #030712;
+  }
+
+  [data-theme='green'] {
+    /* Theme 3 - Green (Emerald/Stone) */
+    --color-primary-50: #ecfdf5;
+    --color-primary-100: #d1fae5;
+    --color-primary-200: #a7f3d0;
+    --color-primary-300: #6ee7b7;
+    --color-primary-400: #34d399;
+    --color-primary-500: #10b981;
+    --color-primary-600: #059669;
+    --color-primary-700: #047857;
+    --color-primary-800: #065f46;
+    --color-primary-900: #064e3b;
+    --color-primary-950: #022c22;
+
+    --color-surface-50: #fafaf9;
+    --color-surface-100: #f5f5f4;
+    --color-surface-200: #e7e5e4;
+    --color-surface-300: #d6d3d1;
+    --color-surface-400: #a8a29e;
+    --color-surface-500: #78716c;
+    --color-surface-600: #57534e;
+    --color-surface-700: #44403c;
+    --color-surface-800: #292524;
+    --color-surface-900: #1c1917;
+    --color-surface-950: #0c0a09;
+  }
+  
+  [data-theme='modern'] {
+    /* Theme 5 - Modern (Indigo/Zinc) */
+    --color-primary-50: #eef2ff;
+    --color-primary-100: #e0e7ff;
+    --color-primary-200: #c7d2fe;
+    --color-primary-300: #a5b4fc;
+    --color-primary-400: #818cf8;
+    --color-primary-500: #6366f1;
+    --color-primary-600: #4f46e5;
+    --color-primary-700: #4338ca;
+    --color-primary-800: #3730a3;
+    --color-primary-900: #312e81;
+    --color-primary-950: #1e1b4b;
+
+    --color-surface-50: #fafafa;
+    --color-surface-100: #f4f4f5;
+    --color-surface-200: #e4e4e7;
+    --color-surface-300: #d4d4d8;
+    --color-surface-400: #a1a1aa;
+    --color-surface-500: #71717a;
+    --color-surface-600: #52525b;
+    --color-surface-700: #3f3f46;
+    --color-surface-800: #27272a;
+    --color-surface-900: #18181b;
+    --color-surface-950: #09090b;
+  }
+
+  [data-theme='dark'] {
+    /* Theme 4 - Dark (Cyan/Slate Dark) */
+    --color-primary-50: #083344;
+    --color-primary-100: #164e63;
+    --color-primary-200: #155e75;
+    --color-primary-300: #0e7490;
+    --color-primary-400: #0891b2;
+    --color-primary-500: #06b6d4;
+    --color-primary-600: #22d3ee;
+    --color-primary-700: #67e8f9;
+    --color-primary-800: #a5f3fc;
+    --color-primary-900: #cffafe;
+    --color-primary-950: #ecfeff;
+
+    --color-surface-50: #020617;
+    --color-surface-100: #0f172a;
+    --color-surface-200: #1e293b;
+    --color-surface-300: #334155;
+    --color-surface-400: #475569;
+    --color-surface-500: #64748b;
+    --color-surface-600: #94a3b8;
+    --color-surface-700: #cbd5e1;
+    --color-surface-800: #e2e8f0;
+    --color-surface-900: #f1f5f9;
+    --color-surface-950: #f8fafc;
+  }
+
+  body {
+    @apply bg-surface-50 text-surface-800 antialiased;
+  }
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(148 163 184);
+}
+
+/* Smooth transitions */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Print styles for A4 reports */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  #print-area {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    max-width: 100% !important;
+  }
+}

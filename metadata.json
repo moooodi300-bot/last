@@ -1,0 +1,8 @@
+{
+  "name": "last",
+  "description": "Imported from GitHub: moooodi300-bot/mycar",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
